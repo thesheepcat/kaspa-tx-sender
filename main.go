@@ -89,7 +89,7 @@ func main() {
 		profiling.Start(cfg.Profile, log)
 	}
 
-	// RPC commection setup
+	// RPC connection setup
 	rpcAddress, err := activeConfig().ActiveNetParams.NormalizeRPCServerAddress(activeConfig().RPCServer)
 	if err != nil {
 		log.Error("RPC address can't be identified:")

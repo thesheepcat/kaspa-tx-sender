@@ -12,12 +12,12 @@ import (
 )
 
 const (
-	defaultLogFilename    = "kaspa-scripts.log"
-	defaultErrLogFilename = "kaspa-scripts-err.log"
+	defaultLogFilename    = "kaspa-tx-sender.log"
+	defaultErrLogFilename = "kaspa-tx-sender-err.log"
 )
 
 var (
-	defaultHomeDir = util.AppDir("kaspa-scripts", false)
+	defaultHomeDir = util.AppDir("kaspa-tx-sender", false)
 	// Default configuration options
 	defaultLogFile    = filepath.Join(defaultHomeDir, defaultLogFilename)
 	defaultErrLogFile = filepath.Join(defaultHomeDir, defaultErrLogFilename)
