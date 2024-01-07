@@ -48,7 +48,7 @@ func parseConfig() error {
 		return err
 	}
 
-	cfg.ActiveNetParams = &dagconfig.DevnetParams
+	cfg.ActiveNetParams = &dagconfig.TestnetParams
 
 	log.SetLevel(logger.LevelInfo)
 	initLogs(backendLog, defaultLogFile, defaultErrLogFile)

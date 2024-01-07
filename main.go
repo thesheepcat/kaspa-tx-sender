@@ -32,12 +32,12 @@ var shutdown int32 = 0
 
 func main() {
 
-	prefix := dagconfig.DevnetParams.Prefix
+	prefix := dagconfig.TestnetParams.Prefix
 
 	// Insert here the result of genkeypair operation
-	myPrivateKey := "00679dd236dd1675a1d9e564041381170823ecc712f0092d2aac260b464f9e16"
-	myAddressString := "kaspadev:qz4q0s2c7jdmd5depaxttpjmn6ckyzcndyqfhyx4h0lsakqpdt8y2edugjm8r"
-	recipientAddressString := "kaspadev:qp52ukce0tm4a39r59j3r7y65gy7anly03l2ge7dnckmtu7jexn7vyukktmny"
+	myPrivateKey := "5352da6a9b87829610211727c253c34eed7f8d39ef4530db6b79e40e844bccd0"
+	myAddressString := "kaspatest:qzj7mhr248ml9znje52egmarcqfk8t2zu6ju0hyp0zc3g3ate2hrj4pr0ggx3"
+	recipientAddressString := "kaspatest:qzj7mhr248ml9znje52egmarcqfk8t2zu6ju0hyp0zc3g3ate2hrj4pr0ggx3"
 
 	// Some Private / Public keys manipulation
 	myAddress, err := util.DecodeAddress(myAddressString, prefix)
